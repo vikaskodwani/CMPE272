@@ -2,8 +2,10 @@
 function array_key_lookup($haystack, $needle)
 {
     $matches = preg_grep("/$needle/", array_keys($haystack));
+
     return array_intersect_key($haystack, array_flip($matches));
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -34,6 +36,7 @@ function array_key_lookup($haystack, $needle)
                 min-width: 100%;
                 *width: 100%;
             }
+
             #stage {
                 height: 1px;
                 overflow: auto;
@@ -41,6 +44,7 @@ function array_key_lookup($haystack, $needle)
                 -webkit-overflow-scrolling: touch;
             }
         }
+
     </style>
 
 </head>
@@ -619,8 +623,11 @@ function array_key_lookup($haystack, $needle)
             xfbml      : true,
             version    : '{latest-api-version}'
         });
+
         FB.AppEvents.logPageView();
+
     };
+
     (function(d, s, id){
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) {return;}
