@@ -1,10 +1,11 @@
 <!doctype html>
 <html>
     <head>
-        <?php require "includes/head.php" ?>
+        
         <title>ProgressWithUs</title>
     </head>
     <body>
+       <?php require "includes/head.php" ?>
         <?php require "includes/navbar.php" ?>
         <?php require "includes/about.php" ?>
         <?php require "includes/services.php" ?>
