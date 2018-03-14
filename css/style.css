@@ -103,7 +103,7 @@ p{
 
 .header{
 	text-align:center;
-	background:url(../img/hero_img1.jpg);
+	background:url(../images/hero_img1.jpg);
 	padding:20px 0;
 }
 .logo{
@@ -235,7 +235,7 @@ color: #fff;
 
 }
 .main-section-contact{
-	background:url(../img/hero_img4.jpeg);
+	background:url(../images/hero_img4.jpeg);
 	text-align:center;
 	padding:20px 0;
 }
