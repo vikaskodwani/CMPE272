@@ -7,7 +7,7 @@
 			  <div><a  title="Competition Analysis">Competition Analysis</a></div>
 			  <div><a title="Business Plan">Business Plan</a></div>
 			  <div><a  title="International Expansion Advice">International Expansion Advice</a></div>  
-			  <div><a  title="Branding Rebranding">Branding &amp; Rebranding</a></div>  
+			  <div><a  title="Branding & Rebranding">Branding &amp; Rebranding</a></div>  
 			</div>
             </div>
 </section>
