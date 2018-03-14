@@ -1,7 +1,6 @@
 <section class="main-section-contact" id="contacts">
-            <br>
-            <br>
-            <div>
+            <div class="container">
+                <div class="animated"><h3>
                 <?php 
                 $contacts = fopen("txt/contacts.txt", "r");
                 while(($line=fgets($contacts))!==false){
@@ -10,5 +9,7 @@
                 }
                 fclose($contacts)
                 ?>
+            </h3>
+            </div>
             </div>
 </section>

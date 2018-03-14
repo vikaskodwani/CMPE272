@@ -26,21 +26,30 @@
 }
 
 .flex-container > div {
-  background-color: #f1f1f1;
-  margin: 10px;
+  background-color: #FFF056;
+  margin: 15px;
   padding: 20px;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
+  font-style: italic;
 }
 
-.floating-box {
-    display: inline-block;
-    width: 150px;
-    height: 75px;
-    margin: 10px;
-    border: 3px solid ;  
+
+
+
+/*
+*/
+.flex-container-news {
+  display: flex;
+  justify-content: center;
 }
 
-.after-box {
-    border: 3px solid red; 
+
+.flex-container-news > div {
+  background-color: #F3FAB6;
+  margin: 10px;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  font-style: italic;
 }
