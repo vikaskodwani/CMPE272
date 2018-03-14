@@ -1,4 +1,4 @@
-    <header class="header" id="about">
+    <section class="header" id="about">
          <div class="container">
              <figure class="logo animated fadeInDown delay-07s">
                 </figure> 
@@ -7,4 +7,4 @@
                  <h3>We provide clients with exclusive and tailored recommendations that leads to increased profits and  growth.</h3>
                 </ul>
             </div>
-        </header>
+        </section>

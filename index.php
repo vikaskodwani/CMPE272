@@ -1,11 +1,11 @@
 <!doctype html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <?php require "includes/head.php" ?>
         <title>ProgressWithUs</title>
+        <?php ob_start(); ?>
     </head>
     <body>
-        <?php require "includes/head.php" ?>
         <?php require "includes/navbar.php" ?>
         <?php require "includes/about.php" ?>
         <?php require "includes/services.php" ?>
