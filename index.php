@@ -1,7 +1,6 @@
 <!doctype html>
 <html>
     <head>
-        
         <title>ProgressWithUs</title>
     </head>
     <body>
