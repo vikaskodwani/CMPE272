@@ -1,4 +1,6 @@
-<nav class="main-nav-outer" id="test">
+
+<header>
+    <nav class="main-nav-outer" id="test">
 	<div class="container">
         <ul class="main-nav">
         	<table>
@@ -13,3 +15,4 @@
         </ul>
     </div>
 </nav>
+</header>

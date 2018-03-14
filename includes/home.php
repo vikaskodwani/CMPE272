@@ -1,4 +1,4 @@
-    <header class="header" id="header">
+    <section class="header" id="header">
 	       <div class="container">
     	       <figure class="logo animated fadeInDown delay-07s">
                 </figure>	
@@ -7,4 +7,4 @@
         	       We provide clients with exclusive and tailored financial recommendations that leads to increased profits and  growth.
                 </ul>
             </div>
-        </header>
+        </section>

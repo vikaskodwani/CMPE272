@@ -1,10 +1,11 @@
 <!doctype html>
 <html>
     <head>
+        <meta name="viewport" content="initial-scale=1"/>
         <title>ProgressWithUs</title>
     </head>
     <body>
-       <?php require "includes/head.php" ?>
+        <?php require "includes/head.php" ?>
         <?php require "includes/navbar.php" ?>
         <?php require "includes/about.php" ?>
         <?php require "includes/services.php" ?>
