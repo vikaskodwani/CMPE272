@@ -104,7 +104,7 @@ p{
 .header{
 	text-align:center;
 /*	background:url(../images/hero_img2.jpeg);
-*/	background-color: #7E8F7C;
+*/	/*background-color: #7E8F7C;*/
 
 }
 .logo{
@@ -113,11 +113,8 @@ p{
 }
 .header h1{
 	font-family: 'Montserrat',sans-serif;
-	font-size:50px;
+	font-size:40px;
 	font-weight:400;
-	letter-spacing: -1px;
-	margin:0 0 22px 0 ;
-	color:#fff;
 }
 
 .we-create{
