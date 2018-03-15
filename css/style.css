@@ -103,7 +103,7 @@ p{
 
 .header{
 	text-align:center;
-/*	background:url(../images/hero_img2.jpeg);
+	background:url(../images/hero_img4.jpeg);
 */	/*background-color: #7E8F7C;*/
 
 }
@@ -115,6 +115,7 @@ p{
 	font-family: 'Montserrat',sans-serif;
 	font-size:40px;
 	font-weight:400;
+	margin:0 5px 0 0;
 }
 
 .we-create{
