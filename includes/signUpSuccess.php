@@ -22,11 +22,16 @@ $address = $_POST['address'];
 $homePhone = $_POST['homePhone'];
 $cellPhone = $_POST['cellPhone'];
 
-$myHost = "127.0.0.1"; // use your real host name
-$myUserName = "admin";   // use your real login user name
-$myPassword = "admin";   // use your real login password
-$myDataBaseName = "labProject"; // use your real database name
+// $myHost = "127.0.0.1"; // use your real host name
+// $myUserName = "admin";   // use your real login user name
+// $myPassword = "admin";   // use your real login password
+// $myDataBaseName = "labProject"; // use your real database name
 
+    
+$myHost = "us-cdbr-iron-east-05.cleardb.net"; 
+$myUserName = "bde8984a4db9c4";  
+$myPassword = "d7290143";   
+$myDataBaseName = "heroku_03a0031248e6bd9"; 
 $con = mysqli_connect( "$myHost", "$myUserName", "$myPassword", "$myDataBaseName" );
 
 if( !$con ) // == null if creation of connection object failed
