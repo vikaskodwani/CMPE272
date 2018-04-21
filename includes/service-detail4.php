@@ -389,7 +389,7 @@ setcookie("product4",time());
             <div class="col-md-7 col-sm-12 col-xs-12">
 
                 <h2 class="name">
-                   Business Plan
+                   Branding & Rebranding
                     <small>Provided by <a href="javascript:void(0);">Progress with us</a></small>
                </h2>
                 <hr>
