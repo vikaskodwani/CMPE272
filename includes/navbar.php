@@ -14,7 +14,7 @@
                     <a class="dropdown-item" href="includes/userSearch.php">Search User</a>
                     </div>
                 </li>
-               
+             <li><a href="includes/webSiteUsers.php">WebSite Users</a></li>  
 
         </ul>
         <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>

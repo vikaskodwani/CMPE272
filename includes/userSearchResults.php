@@ -38,8 +38,6 @@ $myPassword = "d7290143";
 $myDataBaseName = "heroku_03a0031248e6bd9"; 
 $con = mysqli_connect( "$myHost", "$myUserName", "$myPassword", "$myDataBaseName" );
 
-$con = mysqli_connect( "$myHost", "$myUserName", "$myPassword", "$myDataBaseName" );
-
 switch ($radioval) {
     case 'fname':
         $result = mysqli_query($con, "Select * from `Users`  where FirstName = '$searchtext'");

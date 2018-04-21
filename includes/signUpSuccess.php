@@ -35,7 +35,8 @@ $myDataBaseName = "heroku_03a0031248e6bd9";
 $con = mysqli_connect( "$myHost", "$myUserName", "$myPassword", "$myDataBaseName" );
 
 if( !$con ) // == null if creation of connection object failed
-{ echo "111";
+{ 
+  // echo "111";
     // report the error to the user, then exit program
     // die("connection object not created: ".mysqli_error($con));
 } else{

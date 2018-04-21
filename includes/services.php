@@ -26,10 +26,10 @@
 
 			<div class="flex-container">
 			   <div class="col-md-6 text-center mt-5">
-                <h5><a href="includes/last-visited-products.php" class="text-center"> 5 Last visited services</a></h5>
+                <h5><a href="includes/lastVisitedServices.php" class="text-center"> 5 Last visited services</a></h5>
             </div>
             <div class="col-md-6 text-center mt-5">
-                <h5><a href="includes/most-visited-products.php">5 Most visited services</a></h5>
+                <h5><a href="includes/mostVisitedServices.php">5 Most visited services</a></h5>
             </div>
             </div>
 
