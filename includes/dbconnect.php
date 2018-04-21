@@ -8,15 +8,11 @@ $con = mysqli_connect( "$myHost", "$myUserName", "$myPassword", "$myDataBaseName
 
 if( !$con ) // == null if creation of connection object failed
 { 
-	// echo "111";
+	 echo "111";
     // report the error to the user, then exit program
     // die("connection object not created: ".mysqli_error($con));
 }else{
-  // echo "222";
-  $result = mysqli_query($con, "Select * from `Users`  where LastName = 'Kodwani'");
-        $row = mysqli_fetch_array($result, MYSQLI_NUM);
-        $resultcount = count($result);
-        echo "Results are : $resultcount\n";
+   echo "222";
 }
 
 if( mysqli_connect_errno() )  // returns false if no error occurred
@@ -24,7 +20,7 @@ if( mysqli_connect_errno() )  // returns false if no error occurred
     // report the error to the user, then exit program
     // die("Connect failed: ".mysqli_connect_errno()." : ". mysqli_connect_error());
 }else{
-  // echo "4444";
+   echo "4444";
 }
 
 // when got here, successfully connected to database
