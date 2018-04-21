@@ -47,18 +47,17 @@ foreach ($lvl5 as $key => $value) {
 
 
 <div class="container pt-4">
-    <h4>Last Visited Products </h4>
+    <h4>Last Visited Services </h4>
     <hr>
     <div class="row">
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 custom-hidden" id="product1">
             <div class="my-list">
                 <img class="align-content-center" src="../images/s1.jpg" style="width: 200px; height: 150px"
                      alt="dsadas"/>
-                <h3 class="text-center">Task app</h3>
-                <h6 class="text-center">Product-ID:TDU001 </h6>
-                <div class="offer text-center">Extra 5% Off</div>
+                <h3 class="text-center">Competition Analysis</h3>
+                <h6 class="text-center">Competition Analysis </h6>
+                <div class="offer text-center">Contact us</div>
                 <div class="detail">
-                    <p>A beautiful app that integrates with our AI to aid you everyday </p>
                     <img src="../images/s1.jpg " style="width: 200px; height: 150px"
                          alt="dsadas"/>
                     <a href="service-detail1.php" class="btn btn-primary m-2">View Detail</a>
@@ -69,11 +68,11 @@ foreach ($lvl5 as $key => $value) {
             <div class="my-list">
                 <img class="align-content-center" src="../images/s2.jpg" style="width: 200px; height: 150px"
                      alt="dsadas"/>
-                <h3 class="text-center">Calculator app</h3>
-                <h6 class="text-center">Product-ID:TDU002 </h6>
-                <div class="offer text-center">Extra 10% Off</div>
+                <h3 class="text-center">Business Plan</h3>
+                <h6 class="text-center">Business Plan </h6>
+                <div class="offer text-center">Contact us</div>
                 <div class="detail">
-                    <p>A beautiful app that integrates with our AI to aid you everyday </p>
+                    
                     <img src="../images/s2.jpg" style="width: 200px; height: 150px"
                          alt="dsadas"/>
                     <a href="service-detail2.php" class="btn btn-primary m-2">View Detail</a>
@@ -84,11 +83,11 @@ foreach ($lvl5 as $key => $value) {
             <div class="my-list">
                 <img class="align-content-center" src="../images/s3.jpg" style="width: 200px; height: 150px"
                      alt="dsadas"/>
-                <h3 class="text-center">Calendar app</h3>
-                <h6 class="text-center">Product-ID:TDU003 </h6>
-                <div class="offer text-center">Extra 5% Off</div>
+                <h3 class="text-center">International Expansion Advice</h3>
+                <h6 class="text-center">International Expansion Advice </h6>
+                <div class="offer text-center">Contact us</div>
                 <div class="detail">
-                    <p>A beautiful app that integrates with our AI to aid you everyday </p>
+                    <p></p>
                     <img src="../images/s3.jpg" style="width: 200px; height: 150px"
                          alt="dsadas"/>
                     <a href="service-detail3.php" class="btn btn-primary m-2">View Detail</a>
@@ -99,11 +98,10 @@ foreach ($lvl5 as $key => $value) {
             <div class="my-list">
                 <img class="align-content-center" src="../images/s4.jpg" style="width: 200px; height: 150px"
                      alt="dsadas"/>
-                <h3 class="text-center">File Manager</h3>
-                <h6 class="text-center">Product-ID:TDU004 </h6>
-                <div class="offer text-center">Extra 3% Off</div>
+                <h3 class="text-center">Branding & Rebranding</h3>
+                <h6 class="text-center">Branding & Rebranding </h6>
+                <div class="offer text-center">Contact us</div>
                 <div class="detail">
-                    <p>A beautiful app that integrates with our AI to aid you everyday </p>
                     <img src="../images/s4.jpg" style="width: 200px; height: 150px"
                          alt="dsadas"/>
                     <a href="service-detail4.php" class="btn btn-primary m-2">View Detail</a>
@@ -114,11 +112,10 @@ foreach ($lvl5 as $key => $value) {
             <div class="my-list">
                 <img class="align-content-center" src="../images/s5.jpg" style="width: 200px; height: 150px"
                      alt="dsadas"/>
-                <h3 class="text-center">Torch App</h3>
-                <h6 class="text-center">Product-ID:TDU005 </h6>
-                <div class="offer text-center">Extra 11% Off</div>
+                <h3 class="text-center">Staff Training</h3>
+                <h6 class="text-center">Staff Training </h6>
+                <div class="offer text-center">Contact us</div>
                 <div class="detail">
-                    <p>A beautiful app that integrates with our AI to aid you everyday </p>
                     <img src="../images/s5.jpg" style="width: 200px; height: 150px"
                          alt="dsadas"/>
                     <a href="service-detail5.php" class="btn btn-primary m-2">View Detail</a>
@@ -129,11 +126,10 @@ foreach ($lvl5 as $key => $value) {
             <div class="my-list">
                 <img class="align-content-center" src="../images/s6.jpg" style="width: 200px; height: 150px"
                      alt="dsadas"/>
-                <h3 class="text-center">Gallery app</h3>
-                <h6 class="text-center">Product-ID:TDU006 </h6>
-                <div class="offer text-center">Extra 1% Off</div>
+                <h3 class="text-center">Strategic Plans</h3>
+                <h6 class="text-center">Strategic Plans </h6>
+                <div class="offer text-center">Contact us</div>
                 <div class="detail">
-                    <p>A beautiful app that integrates with our AI to aid you everyday </p>
                     <img src="../images/s6.jpg" style="width: 200px; height: 150px"
                          alt="dsadas"/>
                     <a href="service-detail6.php" class="btn btn-primary m-2">View Detail</a>
@@ -144,11 +140,10 @@ foreach ($lvl5 as $key => $value) {
             <div class="my-list">
                 <img class="align-content-center" src="../images/s7.jpg" style="width: 200px; height: 150px"
                      alt="dsadas"/>
-                <h3 class="text-center">Music Player</h3>
-                <h6 class="text-center">Product-ID:TDU007 </h6>
-                <div class="offer text-center">Extra 9% Off</div>
+                <h3 class="text-center">Succession Plans</h3>
+                <h6 class="text-center">Succession Plans </h6>
+                <div class="offer text-center">Contact us</div>
                 <div class="detail">
-                    <p>A beautiful app that integrates with our AI to aid you everyday </p>
                     <img src="../images/s7.jpg" style="width: 200px; height: 150px"
                          alt="dsadas"/>
                     <a href="service-detail7.php" class="btn btn-primary m-2">View Detail</a>
@@ -159,11 +154,10 @@ foreach ($lvl5 as $key => $value) {
             <div class="my-list">
                 <img class="align-content-center" src="../images/s8.jpg" style="width: 200px; height: 150px"
                      alt="dsadas"/>
-                <h3 class="text-center">Reddit app</h3>
-                <h6 class="text-center">Product-ID:TDU008 </h6>
-                <div class="offer text-center">Extra 4% Off</div>
+                <h3 class="text-center">Market Shifts</h3>
+                <h6 class="text-center">Market Shifts </h6>
+                <div class="offer text-center">Contact us</div>
                 <div class="detail">
-                    <p>A beautiful app that integrates with our AI to aid you everyday </p>
                     <img src="../images/s8.jpg" style="width: 200px; height: 150px"
                          alt="dsadas"/>
                     <a href="service-detail8.php" class="btn btn-primary m-2">View Detail</a>
@@ -174,11 +168,13 @@ foreach ($lvl5 as $key => $value) {
             <div class="my-list">
                 <img class="align-content-center" src="../images/s9.jpg" style="width: 200px; height: 150px"
                      alt="dsadas"/>
-                <h3 class="text-center">Camera</h3>
-                <h6 class="text-center">Product-ID:TDU009 </h6>
-                <div class="offer text-center">Extra 3% Off</div>
+                <h3 class="text-center">Service Development</h3>
+                <h6 class="text-center">Service Development </h6>
+                <div class="offer text-center">Contact us</div>
+
+                <div class="offer text-center"></div>
                 <div class="detail">
-                    <p>A beautiful app that integrates with our AI to aid you everyday </p>
+                    
                     <img src="../images/s9.jpg " style="width: 200px; height: 150px"
                          alt="dsadas"/>
                     <a href="service-detail9.php" class="btn btn-primary m-2">View Detail</a>
@@ -189,11 +185,10 @@ foreach ($lvl5 as $key => $value) {
             <div class="my-list">
                 <img class="align-content-center" src="../images/s10.jpg" style="width: 200px; height: 150px"
                      alt="dsadas"/>
-                <h3 class="text-center">Message</h3>
-                <h6 class="text-center">Product-ID:TDU010 </h6>
-                <div class="offer text-center">Extra 19% Off</div>
+                <h3 class="text-center">Pricing Analysis</h3>
+                <h6 class="text-center">Pricing Analysis </h6>
+                <div class="offer text-center">Contact us</div>
                 <div class="detail">
-                    <p>A beautiful app that integrates with our AI to aid you everyday </p>
                     <img src="../images/s10.jpg" style="width: 200px; height: 150px"
                          alt="dsadas"/>
                     <a href="service-detail10.php" class="btn btn-primary m-2">View Detail</a>
