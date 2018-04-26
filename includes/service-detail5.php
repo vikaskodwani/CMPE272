@@ -409,15 +409,19 @@ setcookie("product5",time());
                         <div class="tab-pane fade active in" id="more-information">
                             <br>
                             <strong>Description Title</strong>
-                            <p>The business model describes how the company is positioned within its industry's value chain, and how it organises its relations with its suppliers, clients, and partners in order to generate profits. The business plan translates this positioning in a series of strategic actions and quantifies their financial impact.
-                            Here are some examples of the most common business plans:
+                            <p>Operating a business with employees who have the skills and knowledge to stay productive is dependent upon a few factors. One of the biggest is developing and implementing a successful training program that nurtures employees and capitalizes on their talents.
 
-<li>production</li>
-<li>advertising</li>
-<li>commission</li>
-<li>subscription</li>
-<li>freemium</li>
-<li>accessories</li>
+We are commited to help you create an efficient workforce and keep your business functioning at a high level.
+
+
+
+<li>Identify goals</li>
+<li>Acquire training resources</li>
+<li>Create a schedule</li>
+<li>Find a trainer</li>
+<li>Communicate effectively</li>
+<li>Track progress</li>
+<li>Encourage feedback</li>
 
 
 </p>

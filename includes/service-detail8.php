@@ -409,16 +409,13 @@ setcookie("product8",time());
                         <div class="tab-pane fade active in" id="more-information">
                             <br>
                             <strong>Description Title</strong>
-                            <p>The business model describes how the company is positioned within its industry's value chain, and how it organises its relations with its suppliers, clients, and partners in order to generate profits. The business plan translates this positioning in a series of strategic actions and quantifies their financial impact.
-                            Here are some examples of the most common business plans:
+                            <p>To help reshape your marketing efforts to be more millennial-focused, here are three components that are driving results.
 
-<li>production</li>
-<li>advertising</li>
-<li>commission</li>
-<li>subscription</li>
-<li>freemium</li>
-<li>accessories</li>
 
+
+<li>Know Your Numbers</li>
+<li>Get Visually Social</li>
+<li>Engage And Empower</li>
 
 </p>
                         </div>

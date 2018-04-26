@@ -409,15 +409,14 @@ setcookie("product10",time());
                         <div class="tab-pane fade active in" id="more-information">
                             <br>
                             <strong>Description Title</strong>
-                            <p>The business model describes how the company is positioned within its industry's value chain, and how it organises its relations with its suppliers, clients, and partners in order to generate profits. The business plan translates this positioning in a series of strategic actions and quantifies their financial impact.
-                            Here are some examples of the most common business plans:
+                            <p>Price Analysis is the process of deciding if the asking price for a product or service is fair and
+reasonable, without examining the specific cost and profit calculations the vendor used in arriving at the
+price. It is basically a process of comparing the price with known indicators of reasonableness. 
 
-<li>production</li>
-<li>advertising</li>
-<li>commission</li>
-<li>subscription</li>
-<li>freemium</li>
-<li>accessories</li>
+<li>analysis of previous prices paid</li>
+<li>comparison of vendor’s price with the in-house estimate</li>
+<li>comparison of quotations or published price lists from multiple vendors</li>
+<li>comparisons with GSA prices </li>
 
 
 </p>

@@ -409,15 +409,18 @@ setcookie("product7",time());
                         <div class="tab-pane fade active in" id="more-information">
                             <br>
                             <strong>Description Title</strong>
-                            <p>The business model describes how the company is positioned within its industry's value chain, and how it organises its relations with its suppliers, clients, and partners in order to generate profits. The business plan translates this positioning in a series of strategic actions and quantifies their financial impact.
-                            Here are some examples of the most common business plans:
+                            <p>Succession plans are used to address the inevitable changes that occur when employees resign, retire, are fired, get sick, or die. They make sure the business will continue to run smoothly by identifying and training high-potential workers for advancement into key roles.
 
-<li>production</li>
-<li>advertising</li>
-<li>commission</li>
-<li>subscription</li>
-<li>freemium</li>
-<li>accessories</li>
+
+
+<li>Be proactive with succession planning</li>
+<li>Keep an open mind</li>
+<li>Make the vision known</li>
+<li>Offer regular feedback to protégés</li>
+<li>Provide training to peak performers</li>
+<li>Do a trial run</li>
+<li>Use your plan to develop a hiring strategy</li>
+
 
 
 </p>

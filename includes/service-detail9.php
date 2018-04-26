@@ -409,15 +409,13 @@ setcookie("product9",time());
                         <div class="tab-pane fade active in" id="more-information">
                             <br>
                             <strong>Description Title</strong>
-                            <p>The business model describes how the company is positioned within its industry's value chain, and how it organises its relations with its suppliers, clients, and partners in order to generate profits. The business plan translates this positioning in a series of strategic actions and quantifies their financial impact.
-                            Here are some examples of the most common business plans:
-
-<li>production</li>
-<li>advertising</li>
-<li>commission</li>
-<li>subscription</li>
-<li>freemium</li>
-<li>accessories</li>
+                            <p>TThe process of service development typically involves bringing people together, including service users and providers, to:
+<li>Identify the issue or area for growth in service delivery within the broader service system based on available data, client need and organisational strategic directions;
+</li>
+<li>Develop service development plan and organise the people and resources required for implementation;</li>
+<li>Identify workforce development and support needs to be able to deliver strengthened/new service;</li>
+<li>Develop and implement communication plan for communicating with all relevant stakeholders; and </li>
+<li>Evaluation and ongoing monitoring of the efficacy of the service development.</li>
 
 
 </p>
