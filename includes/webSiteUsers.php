@@ -60,6 +60,37 @@ echo "</tbody> </table>";
 ?>
 
 
+<?php
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, "http://localhost/includes/users.php");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+$result = curl_exec ($ch);
+$users = json_decode($result);
+
+
+
+
+echo "<h2>Muster Users</h2>";
+echo "<table class=\"table table-striped\">
+  <thead>
+    <tr>
+     
+      <th scope=\"col\">First Name</th>
+      <th scope=\"col\">Last Name</th>
+      
+    </tr>
+  </thead>
+  <tbody>";
+
+foreach ($users as $user){
+   echo "<tr><td>$user[0]</td><td>$user[1]</td></tr>";
+}
+
+echo "</tbody> </table> </div>";
+?>
+
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
