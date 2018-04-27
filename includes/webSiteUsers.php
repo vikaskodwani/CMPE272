@@ -62,7 +62,7 @@ echo "</tbody> </table>";
 
 <?php
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "http://localhost/includes/users.php");
+curl_setopt($ch, CURLOPT_URL, "https://progresswithus.herokuapp.com/includes/users.php");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
 $result = curl_exec ($ch);
@@ -71,7 +71,7 @@ $users = json_decode($result);
 
 
 
-echo "<h2>Muster Users</h2>";
+echo "<h2>Users List</h2>";
 echo "<table class=\"table table-striped\">
   <thead>
     <tr>
