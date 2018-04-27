@@ -62,7 +62,8 @@ echo "</tbody> </table>";
 
 <?php
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "https://progresswithus.herokuapp.com/includes/users.php");
+curl_setopt($ch, CURLOPT_URL, "https://offbeatjewels.herokuapp.com/src/allUsers.php");
+
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
 $result = curl_exec ($ch);
