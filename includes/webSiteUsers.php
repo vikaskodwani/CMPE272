@@ -72,7 +72,7 @@ $users = json_decode($result);
 
 
 
-echo "<h2>Users List</h2>";
+echo "<h2>offbeatjewels Users</h2>";
 echo "<table class=\"table table-striped\">
   <thead>
     <tr>
