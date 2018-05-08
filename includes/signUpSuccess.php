@@ -21,35 +21,59 @@ $email = $_POST['email'];
 $address = $_POST['address'];
 $homePhone = $_POST['homePhone'];
 $cellPhone = $_POST['cellPhone'];
+$password = $_POST['password'];
 
-// $myHost = "127.0.0.1"; // use your real host name
-// $myUserName = "admin";   // use your real login user name
-// $myPassword = "admin";   // use your real login password
-// $myDataBaseName = "labProject"; // use your real database name
 
-    
-$myHost = "us-cdbr-iron-east-05.cleardb.net"; 
-$myUserName = "bde8984a4db9c4";  
-$myPassword = "d7290143";   
-$myDataBaseName = "heroku_03a0031248e6bd9"; 
-$con = mysqli_connect( "$myHost", "$myUserName", "$myPassword", "$myDataBaseName" );
+// The data to send to the API
+$postData = array(
+    'action' => 'addUser',
+    'firstName' => $firstName,
+    'lastName' => $lastName,
+    'email' => $email,
+    'password' => $password,
+    'homeAddress' => $address,
+    'homePhone' => $homePhone,
+    'cellPhone' => $cellPhone
+);
+// $a = json_encode($postData);
+// echo $a;
 
-if( !$con ) // == null if creation of connection object failed
-{ 
-  // echo "111";
-    // report the error to the user, then exit program
-    // die("connection object not created: ".mysqli_error($con));
-} else{
-   if( mysqli_query($con,"INSERT INTO `Users` (`FirstName`, `LastName`, `Email`, `Address`, `HomePhone`, `CellPhone`) VALUES ('$firstName','$lastName','$email','$address','$homePhone','$cellPhone')")){
-       echo "<div class='container pt-5'><div class=\"alert alert-success\" role=\"alert\">
- Signed up successfully!
-</div> </div>";
-   }
-   else{
-       echo "Error: ". mysqli_error($con);
-   }
+// $ar = json_decode($a);
+// echo '111';
+// echo $ar[0];
+
+// Setup cURL
+$ch = curl_init('https://cmpe272.tanmay.one/api/v1/');
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+
+
+curl_setopt_array($ch, array(
+    CURLOPT_POST => TRUE,
+    CURLOPT_RETURNTRANSFER => TRUE,
+    CURLOPT_HTTPHEADER => array(
+        'auth-key: '.'34c7c85e562d40fe581ebab3e9c0823e345b55eef8a7ec02c618f99b4f972d8d',
+        'Content-Type: application/json'
+    ),
+    CURLOPT_POSTFIELDS => json_encode($postData)
+));
+
+// Send the request
+$response = curl_exec($ch);
+
+// Check for errors
+if($response === FALSE){
+  echo $response;
+    die(curl_error($ch));
 }
 
+// Decode the response
+echo  $response;
+echo "<div class='container pt-5'><div class=\"alert alert-success\" role=\"alert\">
+ Signed up successfully!
+</div> </div>";
+
+$responseData = json_decode($response, TRUE);
 
 ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

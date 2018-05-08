@@ -1,5 +1,91 @@
 <section class="main-section-services" id="services">
-         <div class="container fullsize">
+<?php
+// The data to send to the API
+$postData = array(
+    'action' => 'getProducts',
+    
+);
+// $a = json_encode($postData);
+// echo $a;
+
+// $ar = json_decode($a);
+// echo '111';
+// echo $ar[0];
+
+// Setup cURL
+$ch = curl_init('https://cmpe272.tanmay.one/api/v1/');
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+
+
+curl_setopt_array($ch, array(
+    CURLOPT_POST => TRUE,
+    CURLOPT_RETURNTRANSFER => TRUE,
+    CURLOPT_HTTPHEADER => array(
+        'auth-key: '.'34c7c85e562d40fe581ebab3e9c0823e345b55eef8a7ec02c618f99b4f972d8d',
+        'Content-Type: application/json'
+    ),
+    CURLOPT_POSTFIELDS => json_encode($postData)
+));
+
+// Send the request
+$response = curl_exec($ch);
+
+// Check for errors
+if($response === FALSE){
+  echo $response;
+    die(curl_error($ch));
+}
+
+// Decode the response
+// echo  $response;
+
+echo "<div class=\"block block-bordered-lg\">
+    <div class=\"container\" id=\"products\">
+        <h4>Our Services </h4>
+        <div class=\"row\">
+";
+
+$responseData = json_decode($response, TRUE);
+
+  foreach ($responseData as $key => $value) {
+    $pId = $value["id"];
+  	$pName = $value["name"];
+  	$pPrice = $value["price"];
+  	$pImage = $value["images"][0]["src"];
+    $pSlug = $value["slug"];
+
+    // echo $value["id"] . ", " . $value["name"] . ", " . $value["slug"]. ", " . $value["price"]. ", " . $value["images"][0]["src"]."<br>";
+      
+    // echo "<div><a title=\"$pName\" href=\"includes/service-detail1.php\"> <img src=\"$pImage\"></a></div>";
+
+    echo "
+            <div class=\"col-lg-3 col-md-3 col-sm-6 col-xs-12\" id=\"$pId\">
+                <div class=\"my-list\">
+                    <img class=\"align-content-center\" src=\"$pImage\" style=\"width: 200px; height: 150px\"
+                         alt=\"dsadas\"/>
+                    <h3 class=\"text-center\">$pName</h3>
+                    <h6 class=\"text-cente\">$pSlug</h6>
+                    <div class=\"detail\">
+                        <p> </p>
+                        <img src=\"$pImage \" style=\"width: 200px; height: 150p\"
+                             alt=\"dsadas\"/>
+                        <a href=\"includes/product-detail1.php?pName=$pName&pPrice=$pPrice&pImage=$pImage\" class=\"btn btn-primary m-2\">View Detail</a>
+                    </div>
+                </div>
+            </div>
+    ";
+}
+echo "</div></div>";
+?>
+
+
+
+
+      
+
+
+<!--  <div class="container fullsize">
          	<br>
          	<br>
             <h1 class="animated" align="center">Our Services</h1>
@@ -32,7 +118,7 @@
                 <h5><a href="includes/mostVisitedServices.php">5 Most visited services</a></h5>
             </div>
             </div>
-
+ -->
             
               
 </section>

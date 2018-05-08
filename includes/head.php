@@ -19,3 +19,12 @@
 <script type="text/javascript" src="js/jquery.isotope.js"></script>
 <script type="text/javascript" src="js/wow.js"></script>
 <script type="text/javascript" src="js/classie.js"></script>
+
+
+
+<link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/toolkit-minimal.css" rel="stylesheet">
+<link href="/css/application-minimal.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/spinning-social.css">
+<link rel="stylesheet" href="/css/productgrid.css">

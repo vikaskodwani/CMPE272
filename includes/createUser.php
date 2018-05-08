@@ -39,6 +39,12 @@
                 <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="Email">
             </div>
         </div>
+         <div class="row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail5">password</label>
+                <input type="password" name="password" class="form-control" id="password">
+            </div>
+        </div>
         <div class="form-group">
             <label for="inputAddress">Address</label>
             <input type="text" name="address" class="form-control" id="inputAddress" placeholder="1234 Main St">
