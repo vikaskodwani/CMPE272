@@ -3,7 +3,6 @@
 // The data to send to the API
 $postData = array(
     'action' => 'getProducts',
-    
 );
 // $a = json_encode($postData);
 // echo $a;
