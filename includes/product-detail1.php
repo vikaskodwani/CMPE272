@@ -8,54 +8,45 @@
     
 
 
-6. visitedProduct
 
-{
-      "action" : "visitedProduct",
-      "slugName" : "product-3",
-      "username" : "dushyant@yahoo.com"
-}
+// $name = $_POST['name'];
+// $password = $_POST['password'];
+// $userVerified = 0;
 
+// $postData = array(
+//     'action' => 'visitedProduct',
+//     'username' => $name,
+//     'password' => $password
+// );
 
-
-$name = $_POST['name'];
-$password = $_POST['password'];
-$userVerified = 0;
-
-$postData = array(
-    'action' => 'visitedProduct',
-    'username' => $name,
-    'password' => $password
-);
-
-// Setup cURL
-$ch = curl_init('https://cmpe272.tanmay.one/api/v1/');
-curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+// // Setup cURL
+// $ch = curl_init('https://cmpe272.tanmay.one/api/v1/');
+// curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+// curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
 
 
-curl_setopt_array($ch, array(
-    CURLOPT_POST => TRUE,
-    CURLOPT_RETURNTRANSFER => TRUE,
-    CURLOPT_HTTPHEADER => array(
-        'auth-key: '.'34c7c85e562d40fe581ebab3e9c0823e345b55eef8a7ec02c618f99b4f972d8d',
-        'Content-Type: application/json'
-    ),
-    CURLOPT_POSTFIELDS => json_encode($postData)
-));
+// curl_setopt_array($ch, array(
+//     CURLOPT_POST => TRUE,
+//     CURLOPT_RETURNTRANSFER => TRUE,
+//     CURLOPT_HTTPHEADER => array(
+//         'auth-key: '.'34c7c85e562d40fe581ebab3e9c0823e345b55eef8a7ec02c618f99b4f972d8d',
+//         'Content-Type: application/json'
+//     ),
+//     CURLOPT_POSTFIELDS => json_encode($postData)
+// ));
 
-// Send the request
-$response = curl_exec($ch);
+// // Send the request
+// $response = curl_exec($ch);
 
-// Check for errors
-if($response === FALSE){
-  echo $response;
-    die(curl_error($ch));
-}
-echo  $response;
-// Decode the response
-$responseData = json_decode($response, TRUE);
-$isSucess = $responseData['success'];
+// // Check for errors
+// if($response === FALSE){
+//   echo $response;
+//     die(curl_error($ch));
+// }
+// echo  $response;
+// // Decode the response
+// $responseData = json_decode($response, TRUE);
+// $isSucess = $responseData['success'];
 
 
 
