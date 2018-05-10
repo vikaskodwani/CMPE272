@@ -11,11 +11,11 @@
                 <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User Section</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="includes/createUser.php">Create User</a>
-                    <a class="dropdown-item" href="includes/userSearch.php">Search User</a>
-                    </div>
+<!--                     <a class="dropdown-item" href="includes/userSearch.php">Search User</a>
+ -->                    </div>
                 </li>
-             <li><a href="includes/webSiteUsers.php">WebSite Users</a></li>  
-
+<!--              <li><a href="includes/webSiteUsers.php">WebSite Users</a></li>  
+ -->
         </ul>
         <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
     </div>
