@@ -4,19 +4,62 @@
     $pName = htmlspecialchars($_GET["pName"]);
     $pPrice = htmlspecialchars($_GET["pPrice"]);
     $pImage = htmlspecialchars($_GET["pImage"]);
+    $pSlugName = htmlspecialchars($_GET["pSlug"]);
     
 
-if(!isset($_COOKIE['visitedcountproduct1'])){
-    $cookie = 1;
-    setcookie("visitedcountproduct1",$cookie);
-}
-else{
-    $cookie = $_COOKIE['visitedcountproduct1'] + 1;
-    setcookie("visitedcountproduct1",$cookie);
+
+6. visitedProduct
+
+{
+      "action" : "visitedProduct",
+      "slugName" : "product-3",
+      "username" : "dushyant@yahoo.com"
 }
 
-//setcookie("count","",time() - 3600);
-setcookie("product1",time());
+
+
+$name = $_POST['name'];
+$password = $_POST['password'];
+$userVerified = 0;
+
+$postData = array(
+    'action' => 'visitedProduct',
+    'username' => $name,
+    'password' => $password
+);
+
+// Setup cURL
+$ch = curl_init('https://cmpe272.tanmay.one/api/v1/');
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+
+
+curl_setopt_array($ch, array(
+    CURLOPT_POST => TRUE,
+    CURLOPT_RETURNTRANSFER => TRUE,
+    CURLOPT_HTTPHEADER => array(
+        'auth-key: '.'34c7c85e562d40fe581ebab3e9c0823e345b55eef8a7ec02c618f99b4f972d8d',
+        'Content-Type: application/json'
+    ),
+    CURLOPT_POSTFIELDS => json_encode($postData)
+));
+
+// Send the request
+$response = curl_exec($ch);
+
+// Check for errors
+if($response === FALSE){
+  echo $response;
+    die(curl_error($ch));
+}
+echo  $response;
+// Decode the response
+$responseData = json_decode($response, TRUE);
+$isSucess = $responseData['success'];
+
+
+
+
 ?>
 
 <!DOCTYPE html>
