@@ -5,6 +5,7 @@
     $pPrice = htmlspecialchars($_GET["pPrice"]);
     $pImage = htmlspecialchars($_GET["pImage"]);
     $pSlugName = htmlspecialchars($_GET["pSlug"]);
+    $pId = htmlspecialchars($_GET["pId"]);
     
 
 
@@ -43,12 +44,51 @@ if($response === FALSE){
   echo $response;
     die(curl_error($ch));
 }
-echo  $response;
+// echo  $response;
 // Decode the response
 $responseData = json_decode($response, TRUE);
 
 
+// echo 'getting review for product '. $pId .'<br>';
 
+// Get reviews of product
+$reviewPostData = array(
+    'action' => 'getReview',
+    'productId' => $pId
+);
+// echo 'Request ';
+// print_r ($reviewPostData);
+// echo '<br>';
+
+
+
+$ch = curl_init('https://cmpe272.tanmay.one/api/v1/');
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+
+
+curl_setopt_array($ch, array(
+    CURLOPT_POST => TRUE,
+    CURLOPT_RETURNTRANSFER => TRUE,
+    CURLOPT_HTTPHEADER => array(
+        'auth-key: '.'34c7c85e562d40fe581ebab3e9c0823e345b55eef8a7ec02c618f99b4f972d8d',
+        'Content-Type: application/json'
+    ),
+    CURLOPT_POSTFIELDS => json_encode($reviewPostData)
+));
+
+// Send the request
+$reviewResponse = curl_exec($ch);
+
+// Check for errors
+if($reviewResponse === FALSE){
+  echo $reviewResponse;
+    die(curl_error($ch));
+}
+// echo  'reviewResponse '.$reviewResponse;
+// Decode the response
+$reviewResponseData = json_decode($reviewResponse, TRUE);
+$reviewCount = count($reviewResponseData);
 
 ?>
 
@@ -430,13 +470,13 @@ $responseData = json_decode($response, TRUE);
                 <h2 class="name">
                    <?php print($pName); ?>
                     <small>Serviced by <a href="javascript:void(0);">progresswithus</a></small>
-                    <i class="fa fa-star fa-2x text-primary"></i>
+<!--                     <i class="fa fa-star fa-2x text-primary"></i>
                     <i class="fa fa-star fa-2x text-primary"></i>
                     <i class="fa fa-star fa-2x text-primary"></i>
                     <i class="fa fa-star fa-2x text-primary"></i>
                     <i class="fa fa-star fa-2x text-muted"></i>
-                    <span class="fa fa-2x"><h5>(109) Votes</h5></span>
-                    <a href="javascript:void(0);">109 customer reviews</a>
+ --><!--                     <span class="fa fa-2x"><h5>(109) Votes</h5></span>-->
+                     <!-- <a href="javascript:void(0);"><?php echo $reviewCount ?> customer reviews</a> -->
                 </h2>
                 <hr>
                 <h3 class="price-container">
@@ -492,76 +532,67 @@ $responseData = json_decode($response, TRUE);
                                 </div>
                             </form>
 
-                            <div class="chat-body no-padding profile-message">
+<?php  
+
+if($reviewCount > 0){
+    // echo "Display reviews here ....".$reviewCount;
+     foreach ($reviewResponseData as $key => $value) {
+    $pId = $value["id"];
+    $pReview = $value["review"];
+    $pUser = $value["name"];
+    $pRating = $value["rating"];
+    // $pSlug = $value["slug"]; 
+
+
+
+        echo"
+        
+ <div class=\"chat-body no-padding profile-message\">
                                 <ul>
-                                    <li class="message">
-                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="online">
-                                        <span class="message-text">
-													<a href="javascript:void(0);" class="username">
-														Alisha Molly
-														<span class="badge">Purchase Verified</span>
-														<span class="pull-right">
-															<i class="fa fa-star fa-2x text-primary"></i>
-															<i class="fa fa-star fa-2x text-primary"></i>
-															<i class="fa fa-star fa-2x text-primary"></i>
-															<i class="fa fa-star fa-2x text-primary"></i>
-															<i class="fa fa-star fa-2x text-muted"></i>
-														</span>
-													</a>
-													Can't divide were divide fish forth fish to. Was can't form the, living life grass darkness very image let unto fowl isn't in blessed fill life yielding above all moved
-												</span>
-                                        <ul class="list-inline font-xs">
-                                            <li>
-                                                <a href="javascript:void(0);" class="text-info"><i class="fa fa-thumbs-up"></i> This was helpful (22)</a>
-                                            </li>
-                                            <li class="pull-right">
-                                                <small class="text-muted pull-right ultra-light"> Posted 1 year ago </small>
-                                            </li>
-                                        </ul>
+                                    <li class=\"message\">
+                                        
+                                        <span class=\"message-text\">
+                                                    <a href=\"javascript:void(0);\" class=\"username\">
+                                                       $pUser
+                                                        <span class=\"pull-right\">
+                                                            $pRating<i class=\"fa fa-star fa-2x text-primary\"></i>
+                                                        </span>
+                                                    </a>
+                                                    $pReview
+                                                </span>
+                                      
                                     </li>
-                                    <li class="message">
-                                        <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="online">
-                                        <span class="message-text">
-													<a href="javascript:void(0);" class="username">
-														Aragon Zarko
-														<span class="badge">Purchase Verified</span>
-														<span class="pull-right">
-															<i class="fa fa-star fa-2x text-primary"></i>
-															<i class="fa fa-star fa-2x text-primary"></i>
-															<i class="fa fa-star fa-2x text-primary"></i>
-															<i class="fa fa-star fa-2x text-primary"></i>
-															<i class="fa fa-star fa-2x text-primary"></i>
-														</span>
-													</a>
-													Excellent product, love it!
-												</span>
-                                        <ul class="list-inline font-xs">
-                                            <li>
-                                                <a href="javascript:void(0);" class="text-info"><i class="fa fa-thumbs-up"></i> This was helpful (22)</a>
-                                            </li>
-                                            <li class="pull-right">
-                                                <small class="text-muted pull-right ultra-light"> Posted 1 year ago </small>
-                                            </li>
-                                        </ul>
-                                    </li>
+
                                 </ul>
-                            </div>
-                        </div>
+                            </div>";
+
+        }
+    }
+
+echo
+"                        </div>
                     </div>
                 </div>
                 <hr>
             </div>
         </div>
     </div>
-    <!-- end product -->
 </div>
 
-<script src="../js/jquery.min.js"></script>
-<script src="../js/toolkit3.js"></script>
-<script src="../js/application3.js"></script>
-<script type="../js/javascript">
+
+
+<script src=\"../js/jquery.min.js\"></script>
+<script src=\"../js/toolkit3.js\"></script>
+<script src=\"../js/application3.js\"></script>
+<script type=\"../js/javascript\">
 
 
 </script>
 </body>
 </html>
+
+        ";
+
+
+?>
+                           
