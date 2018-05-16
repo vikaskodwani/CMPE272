@@ -409,7 +409,7 @@ setcookie("product9",time());
                         <div class="tab-pane fade active in" id="more-information">
                             <br>
                             <strong>Description Title</strong>
-                            <p>TThe process of service development typically involves bringing people together, including service users and providers, to:
+                            <p>The process of service development typically involves bringing people together, including service users and providers, to:
 <li>Identify the issue or area for growth in service delivery within the broader service system based on available data, client need and organisational strategic directions;
 </li>
 <li>Develop service development plan and organise the people and resources required for implementation;</li>

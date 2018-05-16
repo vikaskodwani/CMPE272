@@ -12,6 +12,7 @@
 
 
 <?php
+
 $name = $_POST['name'];
 $password = $_POST['password'];
 $userVerified = 0;
